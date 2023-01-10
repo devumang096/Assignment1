@@ -1,0 +1,9 @@
+Basic Commands ->
+git init
+git clone
+git add
+git commit
+git remote add origin master
+git push -u origin master
+
+

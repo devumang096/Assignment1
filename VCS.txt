@@ -1,0 +1,4 @@
+We can use ssh or secure shell in github to clone the repository to our
+local system for adding,updating the file,transmit files 
+securely.
+
