@@ -8,5 +8,6 @@ git push -u origin master
 git branch
 git revert Head
 git reset --hard Head
+git checkout branch
 
 
