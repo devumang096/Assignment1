@@ -5,5 +5,8 @@ git add
 git commit
 git remote add origin master
 git push -u origin master
+git branch
+git revert Head
+git reset --hard Head
 
 
