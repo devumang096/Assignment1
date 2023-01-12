@@ -1,0 +1,15 @@
+Architecture of NodeJs=>
+    Node APIs contain Asynchronous type of code where as Call Stack contain Synchronous type of code.
+    Callback queue -> callstack -> Node APIs => Event Loop
+
+Features of Nodejs=>
+    1. Single Thread -- it has only one callstack to execute at a time 
+    2. Synchronous -- code run in a particular sequence of operations.
+    3. Non-Blocking -- execute the program without waiting for long input/output operations.
+
+Primitive datatypes in Javascript=>
+    1.let -- initialise within the scope
+    2.var -- initialise the element irrespective of the scope,prints without any error.
+    3.const -- cannot initialise again if already done one time.
+
+

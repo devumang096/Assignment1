@@ -1,0 +1,11 @@
+git branch assignment2
+
+Nodejs->
+    It is used as server side programming and gives us a enviroment to run javascript files.
+    It has inbuilt libraries.
+javascript->
+    It is a programming language used to develop logic in a website.
+    We can also use it in Data Structures and Algorithms.
+
+git revert Head
+git reset --hard Head
