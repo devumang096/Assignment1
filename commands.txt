@@ -9,5 +9,4 @@ git branch
 git revert Head
 git reset --hard Head
 git checkout branch
-
-
+git checkout -b "newbranchname"
