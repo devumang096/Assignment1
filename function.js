@@ -44,3 +44,28 @@ function modifyArray(stringArray){
     }
     return modifiedArray
 }
+
+//Array.prototype.filter
+//array.filter() will loop through each and every element in the array with elements matching the condition in the callback function
+
+const evens=numbers.filter((num)=>num%2==0)
+
+const podcasts=[
+    {title:"Learn React",rating:9,paid:true},
+    {title:"Learn React1",rating:5,paid:true},
+    {title:"Learn React2",rating:7,paid:true},
+    {title:"Learn React3",rating:2,paid:false},
+    {title:"Learn React4",rating:6,paid:false},
+]
+function getFreePodcasts(podcasts){
+    //filter list by paid prop
+    //use map to create a new array with the specified properties
+    return podcasts
+        .filter(item=>item.paid==false)
+        .map(podcasts=>{
+            return{
+                title:podcasts.title,
+                rating:podcasts.rating
+            }
+        })
+}
