@@ -74,3 +74,37 @@ const arr=[2,4,5]
 const multipleThree = arr.map((num)=>num*3)
 
 //output => multipleThree = [6,12,15]
+
+//foreach method
+
+function func(){
+    //original array
+    const items=[12,24,36];
+    const copy=[];
+
+    items.forEach(function (item){
+        copy.push(item*2+2);
+    });
+
+    console.log(copy);
+}
+func()
+
+//finding netEarning
+const emp=[
+    {name:"Adam",salary:5000,bonus:300,tax:1000},
+    {name:"Noah",salary:56000,bonus:200,tax:2000},
+    {name:"Rosh",salary:5300,bonus:560,tax:110},
+    {name:"Aliana",salary:5700,bonus:600,tax:500},
+    {name:"Gil",salary:5020,bonus:200,tax:2000}
+]
+
+let newArr=employees.map((obj)=>{
+    newObj={};
+    newObj.name=obj.name;
+    newObj.netEarning=obj.salary+obj.bonus-obj.tax;
+    return newObj;
+});
+
+// let newArr=employees.map(calCat);
+console.log(newArr);
