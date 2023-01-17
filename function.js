@@ -69,3 +69,8 @@ function getFreePodcasts(podcasts){
             }
         })
 }
+
+const arr=[2,4,5]
+const multipleThree = arr.map((num)=>num*3)
+
+//output => multipleThree = [6,12,15]
