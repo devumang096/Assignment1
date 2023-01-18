@@ -1,12 +1,18 @@
 //constructor function
 
-function myname(name,age){
-    this.name=name;
-    this.age=age;
+// function myname(name,age){
+//     this.name=name;
+//     this.age=age;
 
+// }
+class Person{
+    constructor(){
+
+    }
+    hello(){
+        console.log("Hello there!");
+    }
 }
-
-    const num={12,10,13,15,6,7};
-    const num_square- []
-    nums.map()
-
+const p1=new Person();
+console.log(p1);
+console.log(typeof p1)

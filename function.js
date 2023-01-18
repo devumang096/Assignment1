@@ -105,6 +105,16 @@ let newArr=employees.map((obj)=>{
     newObj.netEarning=obj.salary+obj.bonus-obj.tax;
     return newObj;
 });
-
 // let newArr=employees.map(calCat);
 console.log(newArr);
+
+const prices=[1800,200,null,3000,5000,"Thousand",500,8000];
+
+//ele ->2000 & ele is not a null
+//output=[3000,5000,8000]
+
+//isNaN
+
+const element=prices.filter((num)=>num>2000 && num)
+
+console.log(element);
