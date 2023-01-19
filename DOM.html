@@ -19,7 +19,12 @@
     <h1 class="heading">Lovely Professional University</h1>
 </body>
 <script>
-    let a=document.querySelector(".heading");
-    console.log(typeof a.innerHTML);
+    let result=document.querySelectorAll(".heading");
+    for(let index=0;index<result.length;index++){
+        const element = result[index];
+        element.innerText="Got it guys!!";
+    }
+    // a.innerText="hey!!"
+    // console.log(a.innerHTML);
 </script>
 </html>
