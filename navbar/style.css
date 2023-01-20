@@ -45,7 +45,11 @@ li{
 /* Dropdown menu */
 .dropdown{
     background-color: rgb(1,139,139);
-    /* display: none; */
+    padding: 1em 0;
+    display: none;
     position: absolute; /*with respect to parent*/
     border-radius: 5px;
+}
+.service:hover .dropdown{
+    display: block;
 }
