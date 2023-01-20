@@ -7,7 +7,7 @@
     <title>DOM</title>
 </head>
 <body>
-    <div class="heading">
+    <!-- <div class="heading">
         <h1 id="h">LPU</h1>
     </div>
     <div class="heading">
@@ -16,15 +16,31 @@
     <div class="heading">
         <h1 id="h">HBE</h1>
     </div>
-    <h1 class="heading">Lovely Professional University</h1>
+    <h1 class="heading">Lovely Professional University</h1> -->
+    <div class="demo">
+        <div>
+            <p>Hey everyone!</p>
+        </div>
+    </div>
+    <div class="demo">
+        <div>
+            <h1>Good Evening</h1>
+        </div>
+        <div class="demo">
+            <h2>Lpu</h2>
+        </div>
+    </div>
 </body>
 <script>
-    let result=document.querySelectorAll(".heading");
-    for(let index=0;index<result.length;index++){
-        const element = result[index];
-        element.innerText="Got it guys!!";
-    }
-    // a.innerText="hey!!"
-    // console.log(a.innerHTML);
+    let result=document.getElementsByClassName("demo");
+    console.log(result[1].innerText)
+    result[1].innerHTML="<h1>How are you??</h1>"
+    // let result=document.querySelectorAll(".heading");
+    // for(let index=0;index<result.length;index++){
+    //     const element = result[index];
+    //     element.innerText="Got it guys!!";
+    // }
+    // // a.innerText="hey!!"
+    // // console.log(a.innerHTML);
 </script>
 </html>
