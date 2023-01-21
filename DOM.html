@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <!-- <div class="heading">
+        <h1 id="h">LPU</h1>
+    </div>
+    <div class="heading">
+        <h1 id="h">Hitbullseye</h1>
+    </div>
+    <div class="heading">
+        <h1 id="h">HBE</h1>
+    </div>
+    <h1 class="heading">Lovely Professional University</h1> -->
+    <div class="demo">
+        <div>
+            <p>Hey everyone!</p>
+        </div>
+    </div>
+    <div class="demo">
+        <div>
+            <h1>Good Evening</h1>
+        </div>
+        <div class="demo">
+            <h2>Lpu</h2>
+        </div>
+    </div>
+</body>
+<script>
+    let result=document.getElementsByClassName("demo");
+    // let ans=document.getElementsByClassName("demo");
+    console.log(result[1].innerText)
+    result[1].innerHTML="<h1>How are you??</h1>"
+    result[2].innerText="<h1>How are you??</h1>"
+    // let result=document.querySelectorAll(".heading");
+    // for(let index=0;index<result.length;index++){
+    //     const element = result[index];
+    //     element.innerText="Got it guys!!";
+    // }
+    // // a.innerText="hey!!"
+    // // console.log(a.innerHTML);
+</script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+</head>
+<body>
+    <h1 class="heading">Guess karo Prize Jeeto</h1>
+    <label for="number">Enter a lucky number</label>
+    <input type="text" id="number"/><br><br>
+    <button onclick="onClick()" class="submit">Submit</button>
+    <script>
+        // var y=Math.floor(Math.random()*10+1);
+        var lucky_num=34;
+        function onClick(){
+           var x= document.getElementById("number").value;
+           if(x==lucky_num)
+                document.write("found the lucky number!!!");
+            else if(x!=lucky_num)
+                alert("Wrong number");
+            lucky_num++;
+        }
+    </script>
+</body>
+</html>
