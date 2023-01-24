@@ -30,7 +30,11 @@ function startGame() {
 }
 function turnClick(square) {
   //   console.log(square.target.id);cell id
-  turn(square.target.id, huPlayer);
+  if(typeof origBoard[square.target.id]=='number'){
+    turn(square.target.id,huPlayer);
+    turn(bestSpot(),aiPlayer);
+  }
+//   turn(square.target.id, huPlayer);
 }
 
 function turn(squareId, player) {
@@ -73,4 +77,11 @@ function gameOver(gameWon) {
 function declareWinner(who){
     document.querySelector(".endgame").style.display="block";
     document.querySelector(".endgame .text").innerText=who;
+}
+
+function bestSpot(){
+    return emptySquares()[0];
+}
+function emptySquares(){
+    return origBoard.filter(s=>typeof s == "number")
 }
