@@ -1,4 +1,5 @@
 var origBoard;
+//[0,1,2,3,4,5,6,7,8,9]
 const huPlayer = "O";
 const aiPlayer = "X";
 const winCombos = [
@@ -44,12 +45,14 @@ function turn(squareId, player) {
 function checkWin(board, player) {
   //huplayer '0' aiplayer 'X'
   // [0,1,'0','0',4,'0','X',7,8]
-  let plays = board.reduce((a, e, i) => (e === player ? a.concat(i) : a), []);
+  let plays = board.reduce((a, e, i) => (e === player ? a.concat(i) : a), []);//we will get the indexes of cells where curent player has played
   let gameWon = null;
+  //now check in the winCombos if the plays indexes cover fully any of the winning combo
   for (let [index, win] of winCombos.entries()) {
     if (win.every((elem) => plays.indexOf(elem) > -1)) {
       //game won
       gameWon = { index: index, player: player };
+      //returning index of winning combo and the player who has won the game
       break;
     }
   }
@@ -64,4 +67,10 @@ function gameOver(gameWon) {
   for (var i = 0; i < cells.length; i++) {
     cells[i].removeEventListener("click", turnClick, false);
   }
+  declareWinner();
+}
+
+function declareWinner(who){
+    document.querySelector(".endgame").style.display="block";
+    document.querySelector(".endgame .text").innerText=who;
 }
