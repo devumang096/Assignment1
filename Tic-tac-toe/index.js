@@ -85,3 +85,11 @@ function bestSpot(){
 function emptySquares(){
     return origBoard.filter(s=>typeof s == "number")
 }
+
+function checkTie(){
+    if(emptySquares().length==0){
+        for(var i=0;i<cells.length;i++){
+            cells[i].style.backgroundColor
+        }
+    }
+}
