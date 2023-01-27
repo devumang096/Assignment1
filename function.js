@@ -118,3 +118,19 @@ const prices=[1800,200,null,3000,5000,"Thousand",500,8000];
 const element=prices.filter((num)=>num>2000 && num)
 
 console.log(element);
+
+
+function addClass(selector,className){
+    var element=document.querySelector(selector);
+    element.classList.add(className);
+    //element.classList.remove
+}
+
+<div class="hi my "></div>
+element.classList.add("Name");
+element.classList.add("is");
+
+<div class="hi my name is"></div>
+
+element.classList.add("a","b","c");
+element.classList.remove("hi","my")
