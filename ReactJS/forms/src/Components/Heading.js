@@ -1,12 +1,5 @@
 import React from 'react'
 
-const Heading = () => {
-  return (
-    <div>
-        <h1>Hello world</h1>
-        Heading</div>
-  )
+export default function Heading(){
+    return <div>Hello world</div>;
 }
-
-
-export default Heading;

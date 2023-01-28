@@ -1,9 +1,5 @@
 import React from 'react';
 
-const Section1 = () => {
-  return (
-    <div>Section1</div>
-  )
+export default function Section1(){
+    return <div>Section2</div>
 }
-
-export default Section1;
